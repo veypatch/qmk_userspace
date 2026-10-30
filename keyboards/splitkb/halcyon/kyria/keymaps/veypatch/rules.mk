@@ -2,3 +2,4 @@ ENCODER_ENABLE = no
 MOUSEKEY_ENABLE = no
 
 DEBOUNCE_TYPE = sym_eager_pk
+NKRO_ENABLE = yes

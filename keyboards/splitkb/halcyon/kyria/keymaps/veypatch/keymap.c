@@ -19,9 +19,9 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_split_3x6_5(
-        KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
-        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                       KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, _______, _______, _______, TG(_GAME), KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PSCR,
+        KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                      KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,
+        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                      KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, _______, _______, _______, _______, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_PSCR,
                       KC_LGUI, KC_LALT, KC_DEL, KC_LSFT, LT(_SYM, KC_ENTER), LT(_NAV, KC_TAB), KC_SPC, KC_BSPC, KC_APP,  MO(_ADJUST)
     ),
 
@@ -47,9 +47,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_ADJUST] = LAYOUT_split_3x6_5(
-        _______, QK_BOOT, _______, _______, _______, _______,                                     _______, _______, _______, _______, _______, _______,
+        QK_BOOT, _______, _______, _______, _______, _______,                                     _______, _______, _______, _______, _______, QK_BOOT,
         _______, _______, _______, _______, _______, _______,                                     RM_TOGG, RM_SATU, RM_HUEU, RM_VALU, RM_NEXT, RM_SPDU,
-        _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, RM_SATD, RM_HUED, RM_VALD, RM_PREV, RM_SPDD,
+        _______, _______, _______, _______, _______, _______, _______, _______, TG(_GAME), _______, _______, RM_SATD, RM_HUED, RM_VALD, RM_PREV, RM_SPDD,
                                    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 

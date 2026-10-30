@@ -3,6 +3,8 @@
 
 #pragma once
 
+#define FORCE_NKRO
+
 #if defined(RGB_MATRIX_ENABLE)
 #   define RGB_MATRIX_SLEEP // turn off effects when suspended
 #   undef RGB_MATRIX_KEYPRESSES // React to keypresses
