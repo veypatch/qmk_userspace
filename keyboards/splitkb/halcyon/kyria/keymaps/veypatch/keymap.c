@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NAV] = LAYOUT_split_3x6_5(
         _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,                                         KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
         _______, _______, KC_MPRV, KC_MPLY, KC_MNXT, KC_VOLU,                                      KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   _______,
-        _______, _______, _______, _______, KC_MUTE, KC_VOLD, _______, _______, _______,  _______, KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   _______,
+        _______, _______, _______, _______, KC_MUTE, KC_VOLD, _______, _______, _______,  _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_INS,  _______,
                                    _______, _______, _______, _______, _______, _______, _______, _______, _______, _______
     ),
 
@@ -54,10 +54,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_GAME] = LAYOUT_split_3x6_5(
-        KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                       _______, _______, _______, _______, _______, KC_BSPC,
-        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                       KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_NO,   _______,
-        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, _______, _______, _______, TG(_GAME), KC_NO,   KC_LEFT, KC_DOWN, KC_RGHT, KC_NO,   KC_PSCR,
-                      KC_LGUI, KC_LALT, KC_DEL, KC_SPC, LT(_SYM, KC_ENTER), LT(_NAV, KC_TAB), KC_SPC, KC_BSPC, KC_APP,  MO(_ADJUST)
+        KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                                       KC_NO, KC_NO, KC_NO, KC_NO, KC_NO, KC_BSPC,
+        KC_LSFT, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                                       KC_NO, KC_NO, KC_UP,   KC_NO, KC_NO, KC_NO,
+        KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_NO, KC_NO, KC_NO, TG(_GAME), KC_NO, KC_LEFT, KC_DOWN, KC_RGHT, KC_NO, KC_PSCR,
+                                   KC_LGUI, KC_LALT, KC_DEL, KC_SPC, KC_ENT, KC_TAB, KC_SPC, KC_BSPC, KC_APP, MO(_ADJUST)
     )
 };
 // clang-format on
